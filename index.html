@@ -18,8 +18,13 @@
 <link rel="stylesheet" href="css/owl.theme.css">
 <link rel="stylesheet" href="css/owl.carousel.css">
 
+<script src="https://kit.fontawesome.com/f160b5e97f.js" crossorigin="anonymous"></script>
+
+
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="css/tooplate-style.css">
+<link rel="stylesheet" href="css/style.css">
+
 
 
 </head>
@@ -34,34 +39,37 @@
 
 
 <!-- MENU -->
-<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
-     <div class="container">
+<div class="container-fluid">
+      <div class="container">
 
           <!-- NAVBAR HEADER -->
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <button class="navbar-toggle" data-toggle="collapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                </button>
                <!-- lOGO -->
-               <a href="index.html" class="navbar-brand">Java</a>
-          </div>
+               <a class="navbar-brand" href="#">
+                    <h1>Java</h1>
+                  </a>
 
           <!-- MENU LINKS -->
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home" class="smoothScroll">Home</a></li>
-                    <li><a href="#about" class="smoothScroll">Method Overloading</a></li>
-                    <li><a href="#types" class="smoothScroll">Constructor Overloading</a></li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#home" >Home</a></li>
+                    <li class ="nav-item"><a href="#about">Method Overloading</a></li>
+                    <li class="nav-item"><a href="#types" >Constructor Overloading</a></li>
                </ul>
           </div>
+     </nav>
+     
+      </div>
 
-     </div>
 </div>
 
 
+
 <!-- HOME -->
+<div class="container-fluid">
 <section id="home" class="parallax-section">
      <div class="overlay"></div>
      <div class="container">
@@ -81,17 +89,19 @@
 
           </div>
      </div>
+</div>
 
      <!-- Video -->
-     <video controls autoplay loop muted>
+     <video style="display:block; margin: 0 auto;"controls autoplay loop muted>
           <source src="videos/video.mp4" type="video/mp4">
           Your browser does not support the video tag.
      </video>
 </section>
-
+</div>
 
 <!-- ABOUT -->
 <section id="about" class="parallax-section">
+     <div class="overlay"></div>
      <div class="container">
           <div class="row">
 
@@ -169,8 +179,10 @@
 
 <!--Constructor Overloading -->
 <footer>
-     <div class="container">
-          <div class="row">
+     <section id="types" class="parallax-section">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
 
                
                
@@ -311,11 +323,21 @@
                          </ul>        <br><br><br> 
 
 
-                    <h1><b>Thank You!❤️</b></h1>                         
+                    <h1><b style="text-align:center;">Thank You!❤️</b></h1> 
+                         <div class="foot-link">
+                           <a class="foot-anchor" href="https://www.twitter.com" ><i class="fab fa-twitter"></i></a>
+                           <a class="foot-anchor" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                           <a class="foot-anchor" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                           <a class="foot-anchor" href="https://www.envelope.com"><i class="fas fa-envelope"></i></a>
+                         </div>
+                           <p>© Copyright 2018</p>
+                       
+                                             
                </div>
           </div>
      </div>
 </footer>
+</section>
 
 
 <!-- SCRIPTS -->
